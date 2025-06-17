@@ -1,6 +1,6 @@
 package org.example;
 
-public class Iphone implements ReprodutorMusical, AparelhoTelefonico{
+public class Iphone implements ReprodutorMusical, AparelhoTelefonico ,NavegadorInternet{
 
     //Reprodutor Musical:
 
@@ -48,5 +48,22 @@ public class Iphone implements ReprodutorMusical, AparelhoTelefonico{
     @Override
     public void iniciarCorreioVoz() {
         System.out.println("Iniciando correio de voz.");
+    }
+
+    //Navegador de Intenet:
+
+    @Override
+    public void exibirPagina(String url) {
+        System.out.println("Acessando a página atraves da url: " + url);
+    }
+
+    @Override
+    public void adicionandoNovaAba() {
+        System.out.println("Nova aba adicionada.");
+    }
+
+    @Override
+    public void atualizarPagina() {
+        System.out.println("Atualizando página.");
     }
 }
