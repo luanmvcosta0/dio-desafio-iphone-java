@@ -1,6 +1,6 @@
 package org.example;
 
-public class Iphone implements ReprodutorMusical{
+public class Iphone implements ReprodutorMusical, AparelhoTelefonico{
 
     //Reprodutor Musical:
 
@@ -33,4 +33,20 @@ public class Iphone implements ReprodutorMusical{
         System.out.println("Música selecionada: " + musicaAtual);
     }
 
+    //Aparelho telefonico:
+
+    @Override
+    public void ligar(String numero) {
+        System.out.println("Ligando para o número: " + numero);
+    }
+
+    @Override
+    public void atender() {
+        System.out.println("Chamada atendida.");
+    }
+
+    @Override
+    public void iniciarCorreioVoz() {
+        System.out.println("Iniciando correio de voz.");
+    }
 }
